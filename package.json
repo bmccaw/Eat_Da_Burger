@@ -1,0 +1,25 @@
+{
+  "name": "Eat_Da_Burger",
+  "version": "1.0.0",
+  "description": "A burger app using Node, Express, and Handlebars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmccaw/Eat_Da_Burger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bmccaw/Eat_Da_Burger/issues"
+  },
+  "homepage": "https://github.com/bmccaw/Eat_Da_Burger#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  }
+}
