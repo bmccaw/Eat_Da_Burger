@@ -17,24 +17,24 @@ router.get("/", function(req, res) {
     });
   });
 
-  router.post("/api/burgers", function(req, res) {
+  router.post("/burgers", function(req, res) {
       burger.insertOne([
-          "name", "devoured"
-      ], [req.body.name, req.body.devoured],
-      function(result) {
-          res.json({ id:result.insertID})
+          "burger_name"
+      ], [req.body.name],
+      function(data) {
+          res.redirect('/');
       });     
   });
 
-  router.put("api/burgers/:id", function(req, res) {
+  router.put("/burgers/:id", function(req, res) {
       var condition = "id = " + req.params.id;
 
       console.log('Condition is' + condition);
 
       burger.updateOne({
-          devoured: req.body.devoured
-      }, condition, function(result) {
-          if (result.changedRows == 0) {
+          devoured: true
+      }, condition, function(data) {
+          if (data.changedRows == 0) {
               return res.status(404).end();
           } else {
               res.status(200).end();
