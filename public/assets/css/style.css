@@ -1,7 +1,55 @@
-h1 h2 {
+h1, h2, h3 {
     font-family: 'Cherry Cream Soda', cursive;
-};
+}
 
 body {
-    background-color: black;
+    background-color: #FFB97E;
+}
+
+.row {
+    background-color: sandybrown;
+}
+
+#heading {
+    margin-top: 10px;
+}
+
+#image {
+    margin-top: 5px;
+    margin-bottom: -25px;
+}
+
+.burger {
+    border: 1px solid black;
+    background-color: #FFB97E;
+    margin: 2px;
+    padding: 2px;
+}
+
+.burger:hover {
+    background-color: gold;
+}
+.burger:focus {
+    background-color: #FFB97E;
+}
+
+  /* label color */
+  #name label {
+    color: #000;
+  }
+  #name[type=text] {
+    color: #000;
+  }
+  /* label focus color */
+  #name[type=text]:focus + label {
+    color: #000;
+  }
+  /* label underline focus color */
+  #name[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+
+#burgerAdd {
+    margin: 5px;
 }
