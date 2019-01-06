@@ -1,7 +1,9 @@
-<h1>Burger Time</h1>
 
-<h2>Burgers</h2>
 
+<div class="container">
+<div class="row">
+    <div class="col s6">
+        <h2>Burgers</h2>
 <ul>
     {{#each burgers}}
         {{#unless this.devoured}}
@@ -13,7 +15,8 @@
         {{/unless}}
     {{/each}}
 </ul>
-
+</div>
+<div class="col s6">
 <h2>Devoured Burgers</h2>
 
 <ul>
@@ -27,8 +30,14 @@
     {{/if}}
   {{/each}}
 </ul>
-
+</div>
+</div>
+<div class="row">
+    <div class="col s12">
 <form action="/burgers" method="POST">
       <input type="text" id="name" name="burger_name" placeholder="Royale with Cheese">
       <button type="submit" class="addBurgerButton">Add Burger</button>
     </form>
+    </div>
+    </div>
+</div>
